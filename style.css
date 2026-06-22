@@ -220,11 +220,24 @@ main {
 .image-card {
   display: grid;
   grid-template-rows: minmax(260px, 1fr) auto;
+  overflow: hidden;
 }
 
 .image-card div,
 .echo-card {
   padding: 20px;
+}
+
+.image-card img {
+  grid-row: 1;
+  min-height: 0;
+}
+
+.image-card div {
+  grid-row: 2;
+  position: relative;
+  z-index: 1;
+  background: var(--panel);
 }
 
 .image-card p,
@@ -304,10 +317,14 @@ main {
 
   .image-card,
   .echo-card {
-    min-height: 340px;
+    min-height: 0;
   }
 
   .image-card {
-    grid-template-rows: 230px auto;
+    grid-template-rows: minmax(220px, 58vw) auto;
+  }
+
+  .image-card img {
+    height: 100%;
   }
 }
