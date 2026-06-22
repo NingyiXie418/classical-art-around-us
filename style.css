@@ -246,6 +246,10 @@ main {
   min-height: 0;
 }
 
+.medusa-classical-img {
+  object-position: 50% 64%;
+}
+
 .image-card div {
   grid-row: 2;
   position: relative;
