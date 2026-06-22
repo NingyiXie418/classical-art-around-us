@@ -210,6 +210,19 @@ main {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.comparison.split-images {
+  align-items: stretch;
+}
+
+.comparison.split-images .image-card {
+  min-height: 360px;
+  box-shadow: 0 12px 26px rgba(35, 38, 41, 0.08);
+}
+
+.comparison.split-images .image-card img {
+  aspect-ratio: 4 / 3;
+}
+
 .image-card,
 .echo-card {
   min-height: 420px;
