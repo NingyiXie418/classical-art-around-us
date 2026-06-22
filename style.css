@@ -223,6 +223,15 @@ main {
   aspect-ratio: 4 / 3;
 }
 
+.comparison.portrait-pair .image-card {
+  grid-template-rows: minmax(430px, 58vh) auto;
+}
+
+.comparison.portrait-pair .image-card img {
+  aspect-ratio: 3 / 4;
+  padding: 18px;
+}
+
 .image-card,
 .echo-card {
   min-height: 420px;
@@ -232,7 +241,7 @@ main {
 
 .image-card {
   display: grid;
-  grid-template-rows: minmax(260px, 1fr) auto;
+  grid-template-rows: minmax(300px, 1fr) auto;
   overflow: hidden;
 }
 
@@ -244,10 +253,44 @@ main {
 .image-card img {
   grid-row: 1;
   min-height: 0;
+  padding: 12px;
+  object-fit: cover;
+  object-position: center;
+  background: #f8f3e9;
 }
 
-.medusa-classical-img {
-  object-position: 50% 64%;
+.image-card img.img-contain,
+.hero-image img.img-contain {
+  object-fit: contain;
+}
+
+.image-card img.img-cover {
+  object-fit: cover;
+}
+
+.image-card img.versace-logo-img,
+.image-card img.caravaggio-img {
+  padding: 18px;
+}
+
+.image-card img.versace-logo-img {
+  transform: scale(1.08);
+}
+
+.image-card img.medusa-rondanini-img {
+  object-position: 50% 34%;
+}
+
+.image-card img.medusa-classical-img {
+  object-position: 50% 42%;
+}
+
+.image-card img.simcoe-img {
+  object-position: center 42%;
+}
+
+.image-card img.clash-img {
+  object-position: 54% center;
 }
 
 .image-card div {
